@@ -1,0 +1,229 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR-------------*/
+
+.navegacion{
+    background-color: whitesmoke;
+    height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.menu i{
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+
+header nav .cart-n{
+    position: relative;
+}
+
+header nav .nav-icon{
+    font-size: 30px;
+    padding: 10px;
+    
+}
+header nav .nav-icon a i{
+    color: black;
+
+}
+
+header nav .nav-icon a i:hover{
+     color: blue;
+    
+}
+
+.cart-items-n{
+    position: absolute;
+    top:-8px;
+    right: -8px;
+    background: darkorange;
+    color: white;
+    border-radius: 30%;
+    padding: 0 5px;
+}
+
+
+/* END OF NAVBAR----------------*/
+
+
+
+section h2{
+    padding: 50px;
+    text-align: center;
+}
+
+.products{
+    padding: 30px;
+}
+
+.product1{
+    padding: 50px;
+}
+.product1 :hover{
+    opacity: 0.5;
+}
+
+.product2{
+    padding: 50px;
+}
+.product2 :hover{
+    opacity: 0.5;
+}
+
+.product3{
+    padding: 50px;
+}
+.product3 :hover{
+    opacity: 0.5;
+}
+
+.product4{
+    padding: 50px;
+}
+.product4 :hover{
+    opacity: 0.5;
+}
+
+.product5{
+    padding: 50px;
+}
+.product5 :hover{
+    opacity: 0.5;
+}
+
+.product6{
+    padding: 50px;
+}
+.product6 :hover{
+    opacity: 0.5;
+}
+
+.precio {
+    padding: 20px;
+}
+
+.boton{
+    color: gray;
+    border: 1px solid grey;
+    padding: 8px 24px;
+    border-radius: 50px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boton :hover{
+    color: white
+
+}
+
+
+  /* CARRITO ----------------*/
+
+
+  .cart-overlay{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(240, 157,81, 0.5);
+      z-index: 2;
+      visibility: hidden;
+    }
+
+  
+
+  .cart {
+      position: fixed;
+      margin-top: 100px;
+      padding: 10px;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      background: rgb(231, 226, 221);
+      z-index: 3;
+      pad: 1.5rem;
+      transform: translateX(100%);
+    }
+
+  .cart-content{
+      padding: 20px;
+  }
+
+  .cart.showCart{
+      transform: translateX(0);
+      visibility: visible;
+
+  }
+
+  
+
+@media screen and (min-width: 768px){
+      .cart{
+          width: 30vw;
+          min-width: 450px;
+      }
+  }
+
+  .close-cart{
+      font-size: 1.7 rem;
+      cursor: pointer;
+  }
+
+  .cart h2{
+      text-transform: capitalize;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 2 rem;
+  }
+
+
+
+  /* CART ITEM------------*/
+
+
+
+  .item-amount{
+      text-align: center;
+  }
+
+ .remove-item{
+     color: grey;
+     cursor: pointer;
+ }
+
+ .fa-chevron-up,
+ .fa-chevron-down {
+     color: orange;
+     cursor: pointer;
+ }
+
+
+  /* CART FOOTER---------*/
+
+  .cart-footer{
+      margin-top: 2 rem;
+      text-align: center;
+  }
+
+  .cart-footer h3{
+     
+      margin-bottom: 1rem;
+  }
